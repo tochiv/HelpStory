@@ -8,11 +8,12 @@ import { Head } from '@inertiajs/vue3';
 defineProps({
     mustVerifyEmail: Boolean,
     status: String,
+    title: String
 });
 </script>
 
 <template>
-    <Head title="Profile" />
+    <Head :title="title" />
 
     <AuthenticatedLayout>
         <template #header>
